@@ -1,0 +1,6 @@
+<%= vhdChoice = "" %>
+
+<%= add_child_link '+ ' + _("Add New VHD"), :volumes, { :class => "info", :title => _('add new storage volume'), :vhdChoice => "newVHD"} %>
+<%= add_child_link '+ ' + _("Add Existing VHD"), :volumes, { :class => "info", :title => _('add new storage volume'), :vhdChoice => "existingVHD"} %>
+<%= add_child_link '+ ' + _("Copy Existing VHD"), :volumes, { :class => "info", :title => _('add new storage volume') } %>
+<%= compute_specific_js(compute_resource, 'volume') %>
